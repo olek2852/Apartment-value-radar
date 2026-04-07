@@ -15,6 +15,9 @@ https://github.com/user-attachments/assets/685b6fdf-0a21-4a82-82ce-807cc78e456b
 
 ## Objective
 Analyze the key price drivers in the Polish housing market and develop a predictive model to identify undervalued properties and find market bargains.
+A property is flagged as an opportunity when:
+$$\frac{Predicted\ Price - Listing\ Price}{Listing\ Price} > 10\%$$
+Since the model's MAPE is 8.31%, this 10% threshold ensures that the identified discount is statistically significant and is not a result of standard model variance.
 ## Project structure
 
 **Stage 1: Modelling (Jupyter Notebook)**  
