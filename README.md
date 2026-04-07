@@ -13,7 +13,8 @@ listing price is used to surface undervalued properties.
 
 https://github.com/user-attachments/assets/685b6fdf-0a21-4a82-82ce-807cc78e456b
 
-
+## Objective
+Analyze the key price drivers in the Polish housing market and develop a predictive model to identify undervalued properties and find market bargains.
 ## Project structure
 
 **Stage 1: Modelling (Jupyter Notebook)**  
@@ -50,5 +51,4 @@ Pandas, Scikit-Learn, XGBoost, Optuna, SHAP, Power BI, DAX, Azure Maps
 ## Repository structure
 ```
 ├── 
-README.md
 ```
