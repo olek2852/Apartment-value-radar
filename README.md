@@ -50,5 +50,6 @@ Pandas, Scikit-Learn, XGBoost, Optuna, SHAP, Power BI, DAX, Azure Maps
 
 ## Repository structure
 ```
-├── 
+├── apartmentNotebook.ipynb    # Jupyter notebook
+├── apartmentpricesPbi.pbix    # Power BI report 
 ```
