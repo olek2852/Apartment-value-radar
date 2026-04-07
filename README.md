@@ -8,6 +8,10 @@ listing price is used to surface undervalued properties.
 
 ![Dashboard preview](dashboardscreen.png)
 
+
+https://github.com/user-attachments/assets/685b6fdf-0a21-4a82-82ce-807cc78e456b
+
+
 ## Project structure
 
 **Stage 1: Modelling (Jupyter Notebook)**  
@@ -22,7 +26,7 @@ Interactive dashboard:
   Clicking a listing shows model price, actual price, and estimated profit
 
 ## Key findings (SHAP)
-(apartmentsFI.png)
+<img width="957" height="789" alt="apartmentsFI" src="https://github.com/user-attachments/assets/5245ef7a-0f0b-4456-83e8-ecc12d7eb47f" />
 
 * **`squareMeters`:** Living area is the dominant feature, where larger apartments heavily increase predicted prices and smaller ones drag them down.
 * **`city`:** Engineered using target encoding. The plot shows that markets with high historical average prices (red) act as strong positive multipliers, while more affordable markets (blue) reduce the predicted price.
@@ -36,8 +40,7 @@ Interactive dashboard:
 | MAPE | 8% |
 | Relative RMSE | 14.11%|
 
-(evaluationscreen.png)
-
+<img width="1355" height="618" alt="evaluationscreen" src="https://github.com/user-attachments/assets/db0c9760-65e7-4326-a1f6-f492601ba671" />
 
 ## Tech stack
 Pandas, Scikit-Learn, XGBoost, Optuna, SHAP, Power BI, DAX, Azure Maps
