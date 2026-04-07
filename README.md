@@ -19,7 +19,7 @@ A property is flagged as an opportunity when:
 
 $$\frac{Predicted\ Price - Listing\ Price}{Listing\ Price} > 10\%$$
 
-Since the model's MAPE is 8.31%, this 10% threshold ensures that the identified discount is statistically significant and is not a result of standard model variance.
+Since the model's MAPE is 8.31%, this 10% threshold ensures that the identified discount is statistically significant and is not a result of a standard model variance.
 ## Project structure
 
 **Stage 1: Modelling (Jupyter Notebook)**  
@@ -37,7 +37,7 @@ Interactive dashboard:
 **Shap feature importance plot**
 <img width="957" height="789" alt="apartmentsFI" src="https://github.com/user-attachments/assets/5245ef7a-0f0b-4456-83e8-ecc12d7eb47f" />
 
-* **`squareMeters`:** Living area is the dominant feature, where larger apartments heavily increase predicted prices and smaller ones drag them down.
+* **`squareMeters`:** Living area is the dominant feature, where larger apartments (red dots) heavily increase predicted prices and smaller ones (blue) drag them down.
 * **`city`:** Engineered using target encoding. The plot shows that markets with high historical average prices (red) act as strong positive multipliers, while more affordable markets (blue) reduce the predicted price.
 * **`centreDistance`:** Proximity to the central business district commands a clear premium, shown by low distances (blue) pushing prices up and high distances (red) reducing them.
 * **`buildYear`:** Newer construction dates (red) slightly increase the predicted value.
