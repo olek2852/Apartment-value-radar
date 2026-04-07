@@ -28,7 +28,8 @@ Interactive dashboard:
 - **Page 2 (Opportunity map):** interactive Azure Map with clustering. 
   Clicking a listing shows model price, actual price, and estimated profit
 
-## Key findings (SHAP)
+## Key findings
+**Shap feature importance plot**
 <img width="957" height="789" alt="apartmentsFI" src="https://github.com/user-attachments/assets/5245ef7a-0f0b-4456-83e8-ecc12d7eb47f" />
 
 * **`squareMeters`:** Living area is the dominant feature, where larger apartments heavily increase predicted prices and smaller ones drag them down.
