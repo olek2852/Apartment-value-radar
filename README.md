@@ -6,7 +6,7 @@ the Polish residential real estate market. An XGBoost model estimates
 apartment market value. The difference between predicted and actual 
 listing price is used to surface undervalued properties.
 
-![Dashboard preview]
+## Dashboard preview
 <img width="1548" height="870" alt="dashboardscreen" src="https://github.com/user-attachments/assets/5b5a0916-9fde-428e-bb73-857d15f14bbb" />
 
 
