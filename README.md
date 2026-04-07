@@ -46,7 +46,7 @@ Interactive dashboard:
 | Metric | Value |
 |--------|-------|
 | MAE | 63.2K PLN |
-| MAPE | 8% |
+| MAPE | 8.31% |
 | Relative RMSE | 14.11%|
 
 <img width="1355" height="618" alt="evaluationscreen" src="https://github.com/user-attachments/assets/db0c9760-65e7-4326-a1f6-f492601ba671" />
