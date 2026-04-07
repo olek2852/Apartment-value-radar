@@ -1,4 +1,4 @@
-# 🏢 Apartment Valuation Radar
+# 🏢 Apartment value radar
 
 ## Overview
 Project combining ML and Power BI to analyze 
