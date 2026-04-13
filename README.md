@@ -62,9 +62,9 @@ Evaluating real estate prices involves high variance due to unmeasured, subjecti
 ## Dataset 
 [Apartment Prices in Poland](https://www.kaggle.com/datasets/krzysztofjamroz/apartment-prices-in-poland) over 100K apartment records from 15 largest Polish cities
 ## Tech stack
-Data analysis & machine learning: Pandas, Scikit-Learn, XGBoost, Optuna, SHAP
+**Data analysis & machine learning:** Pandas, Scikit-Learn, XGBoost, Optuna, SHAP
 
-Business Intelligence & visualization: Power BI, DAX, Azure Maps
+**Business Intelligence & visualization:** Power BI, DAX, Azure Maps
 
 ## Repository structure
 ```
