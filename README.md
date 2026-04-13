@@ -38,17 +38,26 @@ Interactive dashboard:
 
 <img width="500" alt="apartmentsFI" src="https://github.com/user-attachments/assets/5245ef7a-0f0b-4456-83e8-ecc12d7eb47f" />
 
-* **`squareMeters`:** Living area is the dominant feature, where larger apartments (red dots) heavily increase predicted prices and smaller ones (blue) drag them down.
-* **`city`:** Engineered using target encoding. The plot shows that markets with high historical average prices (red) act as strong positive multipliers, while more affordable markets (blue) reduce the predicted price.
-* **`centreDistance`:** Proximity to the central business district commands a clear premium, shown by low distances (blue) pushing prices up and high distances (red) reducing them.
-* **`buildYear`:** Newer construction dates (red) slightly increase the predicted value.
+Based on exploratory data analysis and SHAP explainability, the model uncovered the absolute hierarchy of price drivers in the Polish apartment market:
+
+- **Living space is the ultimate price driver (squareMeters):** Total area dominates the valuation model. The analysis shows a massive premium for larger apartments, which heavily inflate the total predicted price, while smaller apartments strictly cap the property's potential value.
+- **Location dictates the baseline (city):** Using target encoding, the model confirms that geography acts as a massive multiplier. High-demand cities (like Warsaw) naturally elevate the baseline price of any property, while more affordable regional markets drag the relative value down regardless of the apartment's standard.
+- **The downtown premium (centreDistance):** Proximity to the central business district commands a clear and significant premium. The SHAP plot reveals that low distances to the center forcefully push prices up, while properties located in the outskirts offer steep, consistent discounts.
+- **The new build premium (buildYear):** While secondary to location and size, newer constructions and recent development years provide a slight but consistent boost to the predicted market value compared to older residential blocks.
 
 ## Model performance
-| Metric | Value |
-|--------|-------|
-| MAE | 63.2K PLN |
-| MAPE | 8.31% |
-| Relative RMSE | 14.11%|
+Evaluating real estate prices involves high variance due to unmeasured, subjective factors (e.g., interior standard, view, neighborhood sentiment). The goal was not to build a perfect oracle, but a robust baseline valuation tool that significantly outperforms basic heuristics.
+
+| Metric | XGBoost (Final) | Decision Tree (Baseline) |
+|--------|---------|--------------------------------|
+| MAE | **63.2K PLN** | 89.0K PLN |
+| MAPE | **8.31%** | 11.55% |
+| Relative RMSE | **14.11%** | 21.39% |
+*Note: The mean apartment price in the dataset is ~768K PLN.*
+
+- **Baseline comparison:** A standard Decision Tree Regressor was evaluated as a baseline. The optimized XGBoost model successfully outperformed it across all metrics, reducing the average estimation error (MAE) by over **25,000 PLN per property**. This demonstrates its superior ability to capture complex, non-linear market dynamics.
+- **Business applicability (MAPE):** Achieving a mean absolute percentage error of 8.31% is highly practical for the real estate domain. It provides a tight enough valuation bracket to confidently flag properties listed at a 10%+ discount as genuine market opportunities, rather than mere statistical noise.
+- **Addressing outliers (RMSE):** The substantial drop in Relative RMSE (from 21.39% to 14.11%) indicates that the XGBoost model is significantly more robust and makes far fewer extreme prediction errors compared to the baseline.
 
 <img width="1355" height="618" alt="evaluationscreen" src="https://github.com/user-attachments/assets/db0c9760-65e7-4326-a1f6-f492601ba671" />
 
