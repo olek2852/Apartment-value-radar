@@ -22,11 +22,10 @@ $$\frac{Predicted\ Price - Listing\ Price}{Listing\ Price} > 10\%$$
 Since the model's MAPE is 8.31%, this 10% threshold ensures that the identified discount is statistically significant and is not a result of a standard model variance.
 
 ## Key findings
-**Shap feature importance plot**
 
 <img width="500" alt="apartmentsFI" src="https://github.com/user-attachments/assets/5245ef7a-0f0b-4456-83e8-ecc12d7eb47f" />
 
-Based on exploratory data analysis and SHAP explainability, the model uncovered the absolute hierarchy of price drivers in the Polish apartment market:
+Based on exploratory data analysis and SHAP, the model uncovered the absolute hierarchy of price drivers in the Polish apartment market:
 
 - **Living space is the ultimate price driver (squareMeters):** Total area dominates the valuation model. The analysis shows a massive premium for larger apartments, which heavily inflate the total predicted price, while smaller apartments strictly cap the property's potential value.
 - **Location dictates the baseline (city):** Using target encoding, the model confirms that geography acts as a massive multiplier. High-demand cities (like Warsaw) naturally elevate the baseline price of any property, while more affordable regional markets drag the relative value down regardless of the apartment's standard.
@@ -65,7 +64,8 @@ Evaluating real estate prices involves high variance due to unmeasured, subjecti
 ## Dataset 
 [Apartment Prices in Poland](https://www.kaggle.com/datasets/krzysztofjamroz/apartment-prices-in-poland) over 100K apartment records from 15 largest Polish cities
 ## Tech stack
-Pandas, Scikit-Learn, XGBoost, Optuna, SHAP, Power BI, DAX, Azure Maps
+Data analysis & machine learning: Pandas, Scikit-Learn, XGBoost, Optuna, SHAP
+Business Intelligence & visualization: Power BI, DAX, Azure Maps
 
 ## Repository structure
 ```
