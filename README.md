@@ -35,9 +35,7 @@ Based on exploratory data analysis and SHAP, the model uncovered the absolute hi
 ## Project structure
 
 **Stage 1: Modelling (Jupyter Notebook)**  
-Data cleaning and EDA, feature engineering and XGBoost training inside 
-a Scikit-Learn Pipeline, hyperparameter tuning with Optuna, model validation and
-explainability using SHAP.
+Data cleaning and EDA on 100k+ records to uncover market trends, followed by feature engineering and model training. Includes Optuna hyperparameter tuning and SHAP explainability to ensure model transparency and alignment with real-world price drivers.
 
 **Stage 2: Dashboard (Power BI)**  
 Interactive dashboard:
