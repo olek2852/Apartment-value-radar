@@ -20,18 +20,6 @@ A property is flagged as an opportunity when:
 $$\frac{Predicted\ Price - Listing\ Price}{Listing\ Price} > 10\%$$
 
 Since the model's MAPE is 8.31%, this 10% threshold ensures that the identified discount is statistically significant and is not a result of a standard model variance.
-## Project structure
-
-**Stage 1: Modelling (Jupyter Notebook)**  
-Data cleaning and EDA, feature engineering and XGBoost training inside 
-a Scikit-Learn Pipeline, hyperparameter tuning with Optuna, model validation and
-explainability using SHAP.
-
-**Stage 2: Dashboard (Power BI)**  
-Interactive dashboard:
-- **Page 1 (Market overview):** contains charts of key metrics: price per sq meter by city, pricing trends by build year, and area vs. price distributions.
-- **Page 2 (Opportunity map):** interactive Azure Map with clustering. 
-  Clicking a listing shows model price, actual price, and estimated profit
 
 ## Key findings
 **Shap feature importance plot**
@@ -44,6 +32,19 @@ Based on exploratory data analysis and SHAP explainability, the model uncovered 
 - **Location dictates the baseline (city):** Using target encoding, the model confirms that geography acts as a massive multiplier. High-demand cities (like Warsaw) naturally elevate the baseline price of any property, while more affordable regional markets drag the relative value down regardless of the apartment's standard.
 - **The downtown premium (centreDistance):** Proximity to the central business district commands a clear and significant premium. The SHAP plot reveals that low distances to the center forcefully push prices up, while properties located in the outskirts offer steep, consistent discounts.
 - **The new build premium (buildYear):** While secondary to location and size, newer constructions and recent development years provide a slight but consistent boost to the predicted market value compared to older residential blocks.
+
+## Project structure
+
+**Stage 1: Modelling (Jupyter Notebook)**  
+Data cleaning and EDA, feature engineering and XGBoost training inside 
+a Scikit-Learn Pipeline, hyperparameter tuning with Optuna, model validation and
+explainability using SHAP.
+
+**Stage 2: Dashboard (Power BI)**  
+Interactive dashboard:
+- **Page 1 (Market overview):** contains charts of key metrics: price per sq meter by city, pricing trends by build year, and area vs. price distributions.
+- **Page 2 (Opportunity map):** interactive Azure Map with clustering. 
+  Clicking a listing shows model price, actual price, and estimated profit
 
 ## Model performance
 Evaluating real estate prices involves high variance due to unmeasured, subjective factors (e.g., interior standard, view, neighborhood sentiment). The goal was not to build a perfect oracle, but a robust baseline valuation tool that significantly outperforms basic heuristics.
