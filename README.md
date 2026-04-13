@@ -35,7 +35,7 @@ Interactive dashboard:
 
 ## Key findings
 **Shap feature importance plot**
-<img width="957" height="789" alt="apartmentsFI" src="https://github.com/user-attachments/assets/5245ef7a-0f0b-4456-83e8-ecc12d7eb47f" />
+<img width="400" alt="apartmentsFI" src="https://github.com/user-attachments/assets/5245ef7a-0f0b-4456-83e8-ecc12d7eb47f" />
 
 * **`squareMeters`:** Living area is the dominant feature, where larger apartments (red dots) heavily increase predicted prices and smaller ones (blue) drag them down.
 * **`city`:** Engineered using target encoding. The plot shows that markets with high historical average prices (red) act as strong positive multipliers, while more affordable markets (blue) reduce the predicted price.
