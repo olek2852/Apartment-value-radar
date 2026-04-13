@@ -71,3 +71,6 @@ Pandas, Scikit-Learn, XGBoost, Optuna, SHAP, Power BI, DAX, Azure Maps
 ├── apartmentNotebook.ipynb    # Jupyter notebook
 ├── apartmentpricesPbi.pbix    # Power BI report 
 ```
+## How to explore
+- Jupyter notebook: open apartmentNotebook.ipynb
+- Dashboard: download apartmentpricesPbi.pbix and open in Power BI Desktop 
