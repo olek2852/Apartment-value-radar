@@ -51,6 +51,7 @@ Evaluating real estate prices involves high variance due to unmeasured, subjecti
 | MAE | **63.2K PLN** | 89.0K PLN |
 | MAPE | **8.31%** | 11.55% |
 | Relative RMSE | **14.11%** | 21.39% |
+
 *Note: The mean apartment price in the dataset is ~768K PLN.*
 
 - **Baseline comparison:** A standard Decision Tree Regressor was evaluated as a baseline. The optimized XGBoost model successfully outperformed it across all metrics, reducing the average estimation error (MAE) by over **25,000 PLN per property**. This demonstrates its superior ability to capture complex, non-linear market dynamics.
