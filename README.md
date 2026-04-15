@@ -63,6 +63,8 @@ Evaluating real estate prices involves high variance due to unmeasured, subjecti
 
 ## Dataset 
 [Apartment Prices in Poland](https://www.kaggle.com/datasets/krzysztofjamroz/apartment-prices-in-poland) over 100K apartment records from 15 largest Polish cities
+**Limitations**
+The dataset contains listings only from the 2023–2024 period. Because the apartment market is highly dynamic, this project serves primarily as a proof of concept to demonstrate the valuation methodology, rather than a live market tool.
 ## Tech stack
 **Data analysis & machine learning:** Pandas, Scikit-Learn, XGBoost, Optuna, SHAP
 
