@@ -13,7 +13,7 @@ listing price is used to surface undervalued properties.
   
 <img width="1548" height="870" alt="dashboardmap" src="https://github.com/user-attachments/assets/e9ae4c1b-2c22-4a29-8c3d-d93c1281e63f" />
 
-
+<br><br>
 
 https://github.com/user-attachments/assets/685b6fdf-0a21-4a82-82ce-807cc78e456b
 
